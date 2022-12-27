@@ -1,0 +1,59 @@
+1. Inicio
+2. funciónPrincipal()
+3.	opcion,i[0-n]
+4.	resultado,x(500)[{a-z},{A-Z},{BS}]<-- ""
+5	area,i[0-n]<-- 0
+6.	<< "Ingrese el numero 1 para obtener el área del cuadrado, el numero 2 para obtener el área del triángulo y el numero 3 para obtener el área del rectángulo"
+7.	>> opcion
+8.	Si opcion == 1 entonces
+9.		resultado <-- obtenerAreaCuadrado(area,opcion)
+10.	De lo contrario
+11.		Si opcion == 2 entonces
+12.			resultado <-- obtenerAreaTriangulo(area,opcion)
+13.		De lo contrario
+14.			Si valor == 3 entonces
+15.				resultado <-- obtenerAreaRectangulo(area,opcion)
+16.			De lo contrario
+17.				<< "Error"
+18.			FinSi
+19.		FinSi
+20.	FinSi
+21. Escribir resultado
+22. fin funcion principal
+23. funcion obtenerAreaCuadrado(area,i;opcion,i); i
+24.	lado,i[0-n]
+25.	area,i[0-n]
+26.	resultado, x(500)[{a-b}, {BS}, {*,=}] <-- ""
+27.	<<"Ingrese el lado del cuadrado"
+28.	>> lado
+29.	area <-- lado * lado
+30.	resultado <-- "El área del cuadrado es:" + lado + "*" + lado + "=" + area
+31.	retornar resultado
+32. fin funcion obtenerAreaCuadrado
+33. funcion obtenerAreaTriangulo(area,i;opcion,i); i
+34.	basei[0-n]
+35.	altura,i[0-n]
+36.	area, i[0-n]
+37.	resultado, x(500)[{a-b}, {BS}, {*,=}] <-- ""
+38.	<<"Ingrese la base del triángulo"
+39.	>> base
+40.	<<"Ingrese la altura del triángulo"
+41.	>> altura
+42.	area <-- (base * altura)/2
+43.	resultado <-- "El área del triángulo es:" + base + "*" + altura + "/2=" + area
+44.	retornar resultado
+45. fin funcion obtenerAreaTriangulo
+46. funcion obtenerAreaRectangulo(area,i;opcion,i); i
+47.	basei[0-n]
+48.	altura,i[0-n]
+49.	area, i[0-n]
+50.	resultado, x(500)[{a-b}, {BS}, {*,=}] <-- ""
+51.	<<"Ingrese la base del rectángulo"
+52.	>> base
+53.	<<"Ingrese la altura del rectángulo"
+54.	>> altura
+55.	area <-- base * altura
+56.	resultado <-- "El área del rectángulo es:" + base + "*" + altura + "=" + area
+57.	retornar resultado
+58. fin funcion obtenerAreaRectangulo
+59. Fin

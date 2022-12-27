@@ -1,0 +1,38 @@
+1. Inicio
+2. funcionPrincipal()
+3.   notaEstudiante1, d[0,n]
+4.   notaEstudiante2, d[0,n]
+5.   notaEstudiante3, d[0,n]
+6.   notaEstudiante4, d[0,n]
+7.   resultado, x(500)[{A,Z},{a,z},{BS}]
+8.   << "Ingrese la nota del estudiante 1"
+9.   >> nota1
+10.  << "Ingrese la nota del estudiante 2"
+11.  >> nota2
+12.  << "Ingrese la nota del estudiante 3"
+13.  >> nota3
+14.  << "Ingrese la nota del estudiante 4"
+15.  >> nota4
+16.  resultado <- obtenerPromedio(notaEstudiante1, notaEstudiante2, notaEstudiante3, notaEstudiante4)
+17.  << resultado
+18. fin funcion principal
+19. funcion obtenerPromedio(notaEstudiante1,d,notaEstudiante2,d,notaEstudiante3,d,notaEstudiante4,d):d
+20.   promedio, d[0,n]
+21.   tipo, x(500)[{A,Z},{a,z},{BS}]
+22.   promedio <- (notaEstudiante1+notaEstudiante2+notaEstudiante3+notaEstudiante4)/4
+23.   Si promedio >= 0 && promedio <= 5
+24.     tipo <- "Regular"
+25.   FinSi
+26.   Si promedio >= 5.1 && promedio <= 8
+27.     tipo <- "Bueno"
+28.   FinSi
+29.   Si promedio >= 8.1 && promedio <= 9
+30.     tipo <- "Muy bueno"
+31.   FinSi
+32.   Si promedio >= 9.1 && promedio <= 10
+33.     tipo <- "Sobresaliente"
+34.   FinSi
+35.   resultado <- "El promedio de las notas" + notaEstudiante1 + "," + notaEstudiante2 + "," + notaEstudiante3 + "," + notaEstudiante4 + "es:" + promedio + "equivalente a:" + tipo
+36.   retornar resultado
+37. fin funcion obtenerPromedio
+38. Fin
