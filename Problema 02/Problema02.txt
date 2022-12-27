@@ -13,13 +13,13 @@
 13.  >> nota3
 14.  << "Ingrese la nota del estudiante 4"
 15.  >> nota4
-16.  resultado <- obtenerPromedio(notaEstudiante1, notaEstudiante2, notaEstudiante3, notaEstudiante4)
+16.  resultado <- obtenerPromedio (notaEstudiante1, notaEstudiante2, notaEstudiante3, notaEstudiante4)
 17.  << resultado
 18. fin funcion principal
-19. funcion obtenerPromedio(notaEstudiante1,d,notaEstudiante2,d,notaEstudiante3,d,notaEstudiante4,d):d
+19. funcion obtenerPromedio (notaEstudiante1, d, notaEstudiante2, d, notaEstudiante3, d, notaEstudiante4, d) :d
 20.   promedio, d[0,n]
 21.   tipo, x(500)[{A,Z},{a,z},{BS}]
-22.   promedio <- (notaEstudiante1+notaEstudiante2+notaEstudiante3+notaEstudiante4)/4
+22.   promedio <- (notaEstudiante1 + notaEstudiante2 + notaEstudiante3 + notaEstudiante4) /4
 23.   Si promedio >= 0 && promedio <= 5
 24.     tipo <- "Regular"
 25.   FinSi
